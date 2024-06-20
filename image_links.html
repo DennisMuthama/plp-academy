@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Links Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        p {
+            color: #271c1c;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+        }
+        .menu {
+            margin-top: 20px;
+        }
+        .menu ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .menu li {
+            margin-bottom: 10px;
+        }
+        .img{
+            length: 10px;
+            width: 12px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#menu">Menu</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Welcome to Image Links Example</h1>
+        <p>This page showcases linked images related to different topics.</p>
+        <h2>Home</h2>
+        <p>Here's an image related to technology:</p>
+        <a href="https://www.example.com/technology" target="_blank">
+            <img src="comp.jpg" alt="Technology Image">
+        </a>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <a href="https://www.example.com/nature1" target="_blank">
+                <img src="nature.jpg" alt="Nature Image 1">
+            </a>
+            <a href="https://www.example.com/nature2" target="_blank">
+                <img src="nature.jpg" alt="Nature Image 2">
+            </a>
+            <a href="https://www.example.com/nature3" target="_blank">
+                <img src="nature.jpg" alt="Nature Image 3">
+            </a>
+        </div>
+    </section>
+
+    <section id="menu">
+        <h2>Menu</h2>
+        <div class="menu">
+            <ul>
+                <li><a href="https://www.pexels.com/search/food/" target="_blank">Food Item 1</a></li>
+                <li><a href="https://www.pexels.com/search/food/" target="_blank">Food Item 2</a></li>
+                <li><a href="https://www.pexels.com/search/food/" target="_blank">Food Item 3</a></li>
+            </ul>
+        </div>
+    </section>
+
+</body>
+</html>
