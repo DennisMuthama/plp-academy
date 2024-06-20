@@ -1,0 +1,25 @@
+[
+    {
+        "type": "income",
+        "amount": 1000.0
+    },
+    {
+        "type": "expense",
+        "amount": 200.0,
+        "category": "Groceries"
+    },
+    {
+        "type": "expense",
+        "amount": 150.0,
+        "category": "Utilities"
+    },
+    {
+        "type": "income",
+        "amount": 500.0
+    },
+    {
+        "type": "expense",
+        "amount": 100.0,
+        "category": "Transportation"
+    }
+]
