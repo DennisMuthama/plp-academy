@@ -1,0 +1,82 @@
+Expense Tracker SQL Queries
+Part 1: Retrieving and Selecting Data
+1.1 Retrieving All Expenses
+SQL Query:
+SELECT * FROM Expenses;
+Explanation:
+This query retrieves all data points (columns) from the "Expenses" table. The SELECT * statement selects all columns, providing a comprehensive view of all recorded expenses.
+
+1.2 Specific Columns   
+SELECT date, category, amount FROM Expenses;
+Explanation:
+Here, the query selects specific columns (date, category, amount) from the "Expenses" table. This approach is useful for focusing analysis on relevant details like spending patterns categorized by date and expense type.
+
+1.3 Filtering by Date Range
+
+SELECT * FROM Expenses
+WHERE date >= '2021-01-01' AND date <= '2024-12-15';
+Explanation:
+This query retrieves expenses recorded between January 1, 2021, and December 15, 2024. It uses the WHERE clause to filter records based on the date range specified, ensuring only relevant data within the specified period is retrieved.
+
+Part 2: Filtering with WHERE Clause
+2.1 Filtering by Category
+
+SELECT * FROM Expenses
+WHERE category = 'Entertainment';
+Explanation:
+This query finds all expenses that belong to the "Entertainment" category. The WHERE clause filters records based on the specified category, allowing focused analysis or reporting on expenses related to specific categories.
+
+2.2 Filtering with Comparison Operators
+
+SELECT * FROM Expenses
+WHERE amount > 50;
+Explanation:
+This query retrieves expenses where the amount is greater than $50. It demonstrates the use of comparison operators (>) to filter records based on numeric values, providing insights into larger expenses or transactions.
+
+2.3 Combining Filters (AND)
+
+SELECT * FROM Expenses
+WHERE amount > 75 AND category = 'Food';
+Explanation:
+Here, the query refines the filtering criteria to find expenses greater than $75 and belonging to the "Food" category. The AND logical operator combines multiple conditions to narrow down specific subsets of data for detailed analysis.
+
+2.4 Combining Filters (OR)
+SQL Query:
+
+sql
+Copy code
+SELECT * FROM Expenses
+WHERE category = 'Transportation' OR category = 'Groceries';
+Explanation:
+This query retrieves expenses belonging to either the "Transportation" or "Groceries" categories. The OR logical operator expands the filtering capability to include records that meet either of the specified conditions, facilitating broader category-based analysis.
+
+2.5 Filtering with NOT
+SQL Query:
+
+sql
+Copy code
+SELECT * FROM Expenses
+WHERE category <> 'Rent';
+Explanation:
+Using the <> (not equal) operator, this query displays expenses that are unrelated to the "Rent" category. It excludes records associated with a specific category, providing insights into spending patterns excluding a particular expense type.
+
+Part 3: Sorting Retrieved Data
+3.1 Sorting by Amount
+SQL Query:
+
+sql
+Copy code
+SELECT * FROM Expenses
+ORDER BY amount DESC;
+Explanation:
+This query sorts all expenses by amount in descending order, from the highest to the lowest spending. Sorting data helps in identifying significant expenses and understanding financial priorities or trends based on expenditure size.
+
+3.2 Sorting by Date and Category
+
+SELECT * FROM Expenses
+ORDER BY date DESC, category ASC;
+Explanation:
+Here, expenses are sorted first by date in descending order and then by category in ascending order. Sorting by multiple columns facilitates detailed analysis of recent spending trends categorized by expense type, offering insights into both chronological and categorical expenditure patterns.
+
+These SQL queries provide a structured approach to retrieving, filtering, and sorting expense data from your tracker application's database. Adjust the column names, values, and date formats as per your actual database schema and specific analysis requirements.
+
